@@ -8,6 +8,8 @@ function App() {
     <>
       <Header />
     <Dummy></Dummy>
+    <Dummy></Dummy>
+    <Dummy></Dummy>
       <Footer />
 
     </>
