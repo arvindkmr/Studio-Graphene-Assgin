@@ -1,0 +1,34 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    color: white;
+    padding: 10px 5%;
+    transition: background-color 0.3s;
+    z-index: 1000; /* Ensure the header is above other elements */
+  }
+  
+  .header.scrolled {
+    background-color: rgba(0, 0, 0, 0); /* Or any other color with transparency */
+  }
+  
+  .header-logo .logo {
+    height: 60px; /* Adjust based on your logo's aspect ratio */
+  }
+  
+  .header-nav .nav-link, .header-actions .action-link {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .header-actions {
+    display: flex;
+    align-items: center;
+  }
+  
