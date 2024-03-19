@@ -1,20 +1,22 @@
-.header {
+
+  .header {
     position: fixed;
     top: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: transparent;
-    color: white;
+    background: #4f4e4e; /* Changed to white for visibility */
+    color: black; /* Adjust text color for visibility */
     padding: 10px 5%;
     transition: background-color 0.3s;
     z-index: 1000; /* Ensure the header is above other elements */
-  }
-  
-  .header.scrolled {
-    background-color: rgba(0, 0, 0, 0); /* Or any other color with transparency */
-  }
+}
+
+.header.scrolled {
+    background-color: #282c34; /* Changed to a solid color for scroll */
+}
+
   
   .header-logo .logo {
     height: 60px; /* Adjust based on your logo's aspect ratio */

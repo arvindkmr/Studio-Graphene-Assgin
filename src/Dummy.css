@@ -1,0 +1,53 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-color: #334;
+  }
+  
+  .header {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .social-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-image {
+    width: 100%;
+    height: 200px; /* Adjust based on your content */
+    background-color: #eee; /* Placeholder for images */
+    margin-bottom: 10px;
+  }
+  
+  .social-text {
+    text-align: center;
+  }
+  
+  .social-stats {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Add additional styles as necessary */
+  
