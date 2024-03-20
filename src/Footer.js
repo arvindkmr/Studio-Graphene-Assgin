@@ -1,6 +1,9 @@
 import React from 'react';
 import './Footer.css'; // Ensure this file exists and is in the correct directory relative to this JS file.
-
+import FacebookIcon from './Assets/facebook.svg'; 
+import TwitterIcon from './Assets/twitter.svg';
+import InstagramIcon from './Assets/instagram.svg';
+import LinkedinIcon from './Assets/Linkedin.svg';
 const Footer = () => {
   return (
     <footer className="footer">
@@ -68,12 +71,25 @@ const Footer = () => {
           <p className="footer-bottom-text">
             &copy; 2017. Company. Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.
           </p>
-          <div className="footer-social">
-            <a href="https://facebook.com" className="social-link">f</a>
-            <a href="https://twitter.com" className="social-link">t</a>
-            <a href="https://instagram.com" className="social-link">in</a>
-          </div>
+          
+        <div className="footer-social">
+        <a href="https://facebook.com" className="social-link">
+          <img src={FacebookIcon} alt="Facebook" /> 
+        </a>
+        <a href="https://twitter.com" className="social-link">
+          <img src={TwitterIcon} alt="Twitter" /> 
+        </a>
+        <a href="https://instagram.com" className="social-link">
+          <img src={InstagramIcon} alt="Instagram" /> 
+        </a>
+        <a href="https://linkedin.com" className="social-link">
+          <img src={LinkedinIcon} alt="Linkedin" /> 
+        </a>
+        <a href="https://facebook.com" className="social-link">
+          <img src={FacebookIcon} alt="Facebook" /> 
+        </a>
         </div>
+      </div>
       </div>
     
     </footer>
