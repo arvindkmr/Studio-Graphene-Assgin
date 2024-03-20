@@ -16,10 +16,10 @@ const Header = () => {
 
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
+      <nav className="header-nav">
       <div className="header-logo">
         <a href="/" className="logo-link">LOGO</a>
       </div>
-      <nav className="header-nav">
         <a href="/about" className="nav-link">ABOUT</a>
         <a href="/community" className="nav-link">COMMUNITY</a>
         <a href="/location" className="nav-link">LOCATION</a>
