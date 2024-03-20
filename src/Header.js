@@ -9,17 +9,15 @@ const Header = () => {
       setIsScrolled(window.scrollY > 0);
     };
 
-    // Add the event listener
     window.addEventListener('scroll', handleScroll);
 
-    // Remove the event listener on cleanup
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-logo">
-        <img src="/path-to-your-logo.png" alt="Logo" className="logo" />
+        <a href="/" className="logo-link">LOGO</a>
       </div>
       <nav className="header-nav">
         <a href="/about" className="nav-link">ABOUT</a>

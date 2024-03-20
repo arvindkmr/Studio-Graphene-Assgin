@@ -3,19 +3,16 @@
     position: fixed;
     top: 0;
     width: 100%;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #4f4e4e; /* Changed to white for visibility */
     color: black; /* Adjust text color for visibility */
-    padding: 10px 5%;
+    padding: 25px 25px 25px 35px;
     transition: background-color 0.3s;
     z-index: 1000; /* Ensure the header is above other elements */
 }
 
-.header.scrolled {
-    background-color: #282c34; /* Changed to a solid color for scroll */
-}
 
   
   .header-logo .logo {
@@ -25,7 +22,7 @@
   .header-nav .nav-link, .header-actions .action-link {
     margin: 0 15px;
     text-decoration: none;
-    color: white;
+    color: black;
     text-transform: uppercase;
   }
   
@@ -42,21 +39,56 @@
     /* Add more styles as needed */
 }
 
-.navigation-slider {
-    /* Style your slider here */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3%; /* Adjust padding as needed */  color: black;
+  transition
+: background-color 0.3s;
+z-index: 1000;
 }
 
-.navigation-slider a {
-    /* Style your navigation links here */
-    cursor: pointer;
-    margin: 0 5px;
+.header-logo .logo-link {
+text-decoration: none;
+color: black; /* Change as needed /
+font-size: 28px; / Adjust to match your logo size /
+font-weight: bold;
+margin-right: 2rem; / Adjust space between logo and nav links */
 }
 
-.request-info {
-    /* Style your button here */
-    padding: 10px 20px;
-    border: none;
-    background-color: #f00; /* Example red color, change as needed */
-    color: white;
-    cursor: pointer;
+.header-nav {
+display: flex;
+align-items: center;
 }
+
+.header-nav .nav-link {
+text-decoration: none;
+color: black; /* Adjust text color /
+margin-right: 1rem; / Adjust space between nav links /
+text-transform: uppercase;
+font-size: 18px; / Adjust font size as needed */
+}
+
+.header-nav .nav-link:last-child {
+margin-right: 0;
+}
+
+.header-actions {
+display: flex;
+align-items: center;
+}
+
+.header-actions .action-link {
+text-decoration: none;
+color: black; /* Adjust text color /
+margin-left: 1rem; / Adjust space between action links /
+text-transform: uppercase;
+font-size: 18px; / Adjust font size as needed */
+}
+

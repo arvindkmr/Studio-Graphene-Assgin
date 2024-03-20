@@ -36,5 +36,10 @@
     transform: rotate(360deg);
   }
 }
+.map-section iframe {
+  width: 100%; 
+  height: 70vh; 
+}
+
 
 
