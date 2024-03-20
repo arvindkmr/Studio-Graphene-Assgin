@@ -10,20 +10,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-sections">
          
-          <div className="footer-section">
-            <h4 className="footer-heading-4">SECTION 1</h4>
-            <a href="#!" className="footer-subheading-4"> Subsection</a>
-            <a href="#!" className="footer-subheading-4"> Subsection</a>
-            <a href="#!" className="footer-subheading-4"> Subsection</a>
-            <a href="#!" className="footer-subheading-4"> Subsection</a>
-          </div>
-          <div className="footer-section">
-            <h4 className="footer-heading-4">SECTION 1</h4>
-            <a href="#!" className="footer-subheading-4"> Subsection</a>
-            <a href="#!" className="footer-subheading-4"> Subsection</a>
-            <a href="#!" className="footer-subheading-4"> Subsection</a>
-            <a href="#!" className="footer-subheading-4"> Subsection</a>
-          </div>
+       
           <div className="footer-section">
             <h4 className="footer-heading-4">SECTION 1</h4>
             <a href="#!" className="footer-subheading-4"> Subsection</a>
@@ -72,6 +59,7 @@ const Footer = () => {
             &copy; 2017. Company. Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.
           </p>
           
+      </div>
         <div className="footer-social">
         <a href="https://facebook.com" className="social-link">
           <img src={FacebookIcon} alt="Facebook" /> 
@@ -89,7 +77,6 @@ const Footer = () => {
           <img src={FacebookIcon} alt="Facebook" /> 
         </a>
         </div>
-      </div>
       </div>
     
     </footer>
