@@ -1,15 +1,17 @@
-
 .footer {
-  background-color: #333;
+  background-color: #333333;
   color: #fff;
-  padding: 20px 0;
+  padding: 20px 120px;
   font-family: Arial, sans-serif;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
-  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 20px 125px ;  */
 }
 
 .footer-sections {
@@ -17,7 +19,8 @@
 }
 
 .footer-section {
-  margin-right: 50px; /* Adjust as needed */
+  margin-right: 50px;
+  /* Adjust as needed */
 }
 
 .footer-section h4 {
@@ -29,36 +32,92 @@
   display: block;
   color: #fff;
   text-decoration: none;
-  margin-bottom: 5px; /* Adjust as needed */
+  margin-bottom: 15px;
+
 }
 
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; /* Adjust as needed */
+  /* Add any additional top section styles */
+}
 .footer-logo {
   text-align: right;
-  font-size: 24px; /* Adjust as needed */
+  /* Add any additional styling or positioning here */
 }
+
+.logo-text-small {
+  font: normal normal bold 35px/52px DIN Condensed;
+  color: #FFFFFF;
+  /* Add any additional styling here */
+}
+
+.logo-text-large {
+  font: normal normal bold 62px/52px DIN Condensed;
+  color: #FFFFFF;
+  /* Add any additional styling here */
+}
+
 
 .footer-social {
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-top: 10px; /* Adjust as needed */
+  margin-top: 10px;
+
 }
 
 .social-link {
   display: inline-block;
-  width: 24px; /* Adjust as needed */
-  height: 24px; /* Adjust as needed */
-  background-color: #555; /* Placeholder for social icons */
+  width: 24px;
+  height: 24px;
+  background-color: #555;
+  margin-left: 10px; 
 }
 
-.footer-bottom {
-  text-align: center;
-  border-top: 1px solid #444;
-  padding-top: 10px;
-  margin-top: 10px;
-}
 
 .footer-bottom p {
   font-size: 12px;
   margin: 0;
+}
+
+.footer-heading-4 {
+  text-align: left;
+  font: normal normal bold 14px DIN Condensed;
+  letter-spacing: 0.14px;
+  color: #FFDAC9;
+  opacity: 1;
+}
+
+.footer-subheading-4 {
+  text-align: left;
+  font: normal normal normal 13px Gill Sans;
+  letter-spacing: 0.13px;
+  color: #767676 !important;
+  opacity: 1;
+}
+.footer-bottom-text {
+  text-align: left;
+  font: normal normal normal 13px/20px Gill Sans;
+  letter-spacing: 0.13px;
+  color: #767676;
+  opacity: 1;
+  margin: 0; /* Removes default margin from <p> element */
+  flex: 1; /* Allows the text to take up available space */
+}
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Adjust if necessary */
+}
+.footer-bottom {
+  background-color: #333; /* Use the appropriate color */
+  color: #767676;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; /* Adjust as needed */
 }

@@ -8,13 +8,13 @@ const SocialPost = ({ image, text, username, likes, comments }) => {
       <div className="social-text">{text}</div>
       <div className="social-stats">
         <span>{likes} likes</span>
-        <span>{comments} comments</span>
+        <span>{comments} comments...</span>
       </div>
     </div>
   );
 };
 
-const Dummy = () => {
+const Yummy = () => {
   // Dummy data, replace with your own
   const posts = [
     { username: '@love_food', likes: '99.7K', comments: '789', text: 'Waffle sticks in Copenhagen!', image: 'path_to_image' },
@@ -24,7 +24,7 @@ const Dummy = () => {
 
   return (
     <div className="container">
-      Dummy
+      Yummy
       {posts.map((post, index) => (
         <SocialPost key={index} {...post} />
       ))}
@@ -32,4 +32,4 @@ const Dummy = () => {
   );
 };
 
-export default Dummy;
+export default Yummy;

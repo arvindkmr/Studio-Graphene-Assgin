@@ -34,3 +34,29 @@
     align-items: center;
   }
   
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    /* Add more styles as needed */
+}
+
+.navigation-slider {
+    /* Style your slider here */
+}
+
+.navigation-slider a {
+    /* Style your navigation links here */
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.request-info {
+    /* Style your button here */
+    padding: 10px 20px;
+    border: none;
+    background-color: #f00; /* Example red color, change as needed */
+    color: white;
+    cursor: pointer;
+}
