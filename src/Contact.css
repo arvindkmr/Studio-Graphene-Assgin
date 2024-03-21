@@ -1,0 +1,75 @@
+.contact-section {
+    position: relative;
+    width: 100vw;
+    min-height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FFDAC9;
+    box-sizing: border-box;
+    padding: 30px;
+    overflow: hidden;
+  }
+  
+  .contact-header h2 {
+    text-align: left;
+    font: normal normal bold 35px/52px 'DIN Condensed'; /* updated font styling */
+    margin-bottom: 0; /* remove margin if not needed */
+    color: #333333; /* updated text color */
+  }
+  
+  .contact-header span { /* styling for "With Us" */
+    display: block; /* makes it a block-level element */
+    text-align: left;
+    font: normal normal bold 62px/52px 'DIN Condensed'; /* updated font styling */
+    letter-spacing: 0px;
+    color: #333333; /* updated text color */
+  }
+  
+  .contact-description {
+    text-align: left;
+    font: normal normal normal 15px/20px 'Gill Sans'; /* updated font styling */
+    letter-spacing: 0.15px;
+    color: #767676; /* updated text color */
+    opacity: 1; /* ensure full opacity */
+    margin-top: 20px; /* add margin at the top if necessary */
+  }
+  
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .form-group button {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .contact-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 400px;
+    width: 10vw; 
+    height: 100vh;
+    background: url('./Assets/star-pattern.png') no-repeat; /* Adjust path as necessary */
+    background-size: contain; /* Or 'cover' depending on the effect you want */
+    pointer-events: none; /* Ensures the pattern doesn't interfere with clicking */
+  }

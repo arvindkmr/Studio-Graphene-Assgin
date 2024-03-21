@@ -1,0 +1,44 @@
+.community-section {
+    padding: 50px;
+    background-color: #fff; /* or any other color */
+    text-align: center;
+  }
+  
+  .community-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  
+  .community-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .community-text-block {
+    flex: 1;
+    padding-right: 20px; /* Adjust as needed */
+  }
+  
+  .know-more-btn {
+    /* Style your button here */
+  }
+  
+  .community-posts {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .post {
+    /* Style for your posts */
+  }
+  
+  .post img {
+    width: 100%; /* Adjust as needed */
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* Add other styles as needed */
+  

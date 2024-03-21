@@ -1,0 +1,54 @@
+.hero-section {
+    position: relative;
+    width: 100vw;
+    height: 120vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-main-title { /* For "THE BEST FOODIE" */
+    font-size: 82px; /* As specified */
+    line-height: 95px;
+    font-weight: bold;
+    font-family: 'DIN Condensed', sans-serif;
+    color: #FFFFFF;
+    margin: 0;
+  }
+  
+  .hero-highlight-title { /* For "EXPERIENCE" */
+    font-size: 115px; /* As specified */
+    line-height: 95px;
+    font-weight: bold;
+    font-family: 'DIN Condensed', sans-serif;
+    color: #FFFFFF;
+    margin: 0;
+  }
+  
+  .hero-subtitle { /* For "NOW IN LONDON" */
+    font-size: 35px; /* As specified */
+    line-height: 52px;
+    font-weight: bold;
+    font-family: 'DIN Condensed', sans-serif;
+    color: #FFFFFF;
+    opacity: 1;
+    margin: 0;
+  }
+  .stamp-container {
+    position: absolute;
+    top: 140px; /* Adjust as needed to match the position in the design */
+    left: 370px; /* Centers the stamp container */
+    transform: translateX(-50%); /* Align the center of the stamp with its container */
+    z-index: 10; /* Make sure it's above other content */
+  }
+  
+  .stamp-image {
+    width: 150px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    /* Additional styling if needed */
+  }
+  
