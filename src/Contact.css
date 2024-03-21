@@ -1,75 +1,132 @@
 .contact-section {
     position: relative;
-    width: 100vw;
+    width: 100%;
     min-height: 50vh;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
     background-color: #FFDAC9;
     box-sizing: border-box;
-    padding: 30px;
+    padding: 50px 140px 20px 140px ;
     overflow: hidden;
-  }
-  
-  .contact-header h2 {
-    text-align: left;
-    font: normal normal bold 35px/52px 'DIN Condensed'; /* updated font styling */
-    margin-bottom: 0; /* remove margin if not needed */
-    color: #333333; /* updated text color */
-  }
-  
-  .contact-header span { /* styling for "With Us" */
-    display: block; /* makes it a block-level element */
-    text-align: left;
-    font: normal normal bold 62px/52px 'DIN Condensed'; /* updated font styling */
-    letter-spacing: 0px;
-    color: #333333; /* updated text color */
-  }
-  
-  .contact-description {
-    text-align: left;
-    font: normal normal normal 15px/20px 'Gill Sans'; /* updated font styling */
-    letter-spacing: 0.15px;
-    color: #767676; /* updated text color */
-    opacity: 1; /* ensure full opacity */
-    margin-top: 20px; /* add margin at the top if necessary */
-  }
-  
-  .contact-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-  }
-  
-  .form-group {
+    
+}
+
+.contact-header {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px; /* Adjust based on your spacing needs */
+}
+
+.contact-header h2 {
+    text-align: start;
+    font: normal normal bold 35px/52px 'DIN Condensed';
+    color: #333333;
+    margin: 0;
+}
+
+.contact-header span {
+    font: normal normal bold 62px/52px 'DIN Condensed';
+    color: #333333;
+}
+.contact-description{
+    width: 330px;
+    height: auto;
+}
+
+.contact-description-1 {
+    text-align: start;
+    font: normal normal normal 15px/20px 'Gill Sans';
+    color: #767676;
+    opacity: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contact-description-2{
+    text-align: start;
+    font: normal normal normal 15px/20px 'Gill Sans';
+    color: #767676;
+    opacity: 1;
+    /* margin-top: 20px;  */
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    width: calc(100% - 60px); 
+    flex-wrap: wrap;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-group {
     display: flex;
     flex-direction: column;
-  }
-  
-  .form-group label {
+    margin-right: 0px; /* adds space between the columns, adjust as needed */
+}
+
+.form-group:last-child {
+    margin-right: 0; /* removes margin from the last element */
+}
+
+.form-group label {
+    font: bold 14px/42px 'DIN Condensed';
+    color: #333333;
     margin-bottom: 5px;
-  }
-  
-  .form-group input,
-  .form-group select {
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .form-group button {
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .contact-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 400px;
-    width: 10vw; 
-    height: 100vh;
-    background: url('./Assets/star-pattern.png') no-repeat; /* Adjust path as necessary */
-    background-size: contain; /* Or 'cover' depending on the effect you want */
-    pointer-events: none; /* Ensures the pattern doesn't interfere with clicking */
-  }
+    text-align: left;
+}
+
+.form-group input,
+.form-group select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    border-bottom: 1px solid #767676;
+background-color: transparent;
+color: #767676;
+font-family: 'Gill Sans', sans-serif;
+font-size: 15px;
+line-height: 20px;
+letter-spacing: 0.15px;
+opacity: 1;
+padding: 10px 0; 
+margin-bottom: 20px;
+}
+
+.form-group input::placeholder,
+.form-group select::placeholder {
+color: #767676;
+opacity: 0.3; /* Lower opacity for the placeholder text */
+}
+
+.form-group button {
+background-color: #333333;
+font: normal normal bold 18px/52px 'DIN Condensed';
+letter-spacing: 0.18px;
+color: #FFDAC9;
+border: none;
+outline: none;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.send-button {
+padding: 12px 24px; /* Adjust padding to match your design /
+margin-top: 20px; / Space from the last input field */
+}
+
+/* Adjustments for the select dropdown arrow */
+.form-group select {
+background-image: url('./Assets/down-arrow.svg');
+background-repeat: no-repeat;
+background-position: right 10px top 50%;
+background-size: 15px;
+}
+
+
