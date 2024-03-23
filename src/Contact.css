@@ -7,15 +7,16 @@
     align-items: center;
     background-color: #FFDAC9;
     box-sizing: border-box;
-    padding: 50px 140px 20px 140px ;
+    padding: 50px 140px 20px 140px;
     overflow: hidden;
-    
+
 }
 
 .contact-header {
     text-align: center;
     width: 100%;
-    margin-bottom: 30px; /* Adjust based on your spacing needs */
+    margin-bottom: 30px;
+    /* Adjust based on your spacing needs */
 }
 
 .contact-header h2 {
@@ -29,7 +30,8 @@
     font: normal normal bold 62px/52px 'DIN Condensed';
     color: #333333;
 }
-.contact-description{
+
+.contact-description {
     width: 330px;
     height: auto;
 }
@@ -42,7 +44,8 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.contact-description-2{
+
+.contact-description-2 {
     text-align: start;
     font: normal normal normal 15px/20px 'Gill Sans';
     color: #767676;
@@ -53,31 +56,33 @@
 .contact-form {
     display: flex;
     justify-content: center;
-    width: 100%;
-    width: calc(100% - 60px); 
+    width: calc(100% - 60px);
     flex-wrap: wrap;
 }
 
 .form-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     width: 100%;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    margin-right: 0px; /* adds space between the columns, adjust as needed */
+    margin-right: 20px;
+    /* adds space between the columns, adjust as needed */
+    min-width: 300px;
 }
 
 .form-group:last-child {
-    margin-right: 0; /* removes margin from the last element */
+    margin-right: 0;
+    /* removes margin from the last element */
+
 }
 
 .form-group label {
     font: bold 14px/42px 'DIN Condensed';
     color: #333333;
-    margin-bottom: 5px;
     text-align: left;
 }
 
@@ -88,45 +93,112 @@
     appearance: none;
     border: none;
     border-bottom: 1px solid #767676;
-background-color: transparent;
-color: #767676;
-font-family: 'Gill Sans', sans-serif;
-font-size: 15px;
-line-height: 20px;
-letter-spacing: 0.15px;
-opacity: 1;
-padding: 10px 0; 
-margin-bottom: 20px;
+    background-color: transparent;
+    color: #767676;
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+    opacity: 1;
+    padding: 4px !important;
 }
 
 .form-group input::placeholder,
 .form-group select::placeholder {
-color: #767676;
-opacity: 0.3; /* Lower opacity for the placeholder text */
+    color: #767676;
+    opacity: 0.3;
+    /* Lower opacity for the placeholder text */
 }
 
 .form-group button {
-background-color: #333333;
-font: normal normal bold 18px/52px 'DIN Condensed';
-letter-spacing: 0.18px;
-color: #FFDAC9;
-border: none;
-outline: none;
-cursor: pointer;
-transition: background-color 0.3s ease;
+    background-color: #333333;
+    font: normal normal bold 18px/52px 'DIN Condensed';
+    letter-spacing: 0.18px;
+    color: #FFDAC9;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .send-button {
-padding: 12px 24px; /* Adjust padding to match your design /
-margin-top: 20px; / Space from the last input field */
+    display: block;
+    /* Change from inline-block to block if you want it to fill the width of its container */
+    width: 100%;
+    /* Set the button width to 100% of its parent */
+    padding: 0px 24px !important;
+    /* Adjust padding to match your design */
+    margin-top: 20px;
+    /* Space from the last input field */
 }
 
 /* Adjustments for the select dropdown arrow */
 .form-group select {
-background-image: url('./Assets/down-arrow.svg');
-background-repeat: no-repeat;
-background-position: right 10px top 50%;
-background-size: 15px;
+    background-image: url('./Assets/down-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 15px;
 }
 
 
+.contact-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    /* Align to the top of the contact section */
+    right: 490px;
+    /* Align to the right of the contact section */
+    width: 130px;
+    /* Adjust the width as necessary to match your star pattern width */
+    height: 90px;
+    /* Full height of the contact section */
+    background: url('./Assets/star-pattern.png') no-repeat;
+    /* Path to your star pattern image */
+    background-size: contain;
+    /* Use 'contain' to ensure the entire image is shown */
+    z-index: 1;
+    /* Ensure the pattern is in the background */
+}
+
+.contact-header span {
+    position: relative;
+    z-index: 2;
+    /* Ensures the text is above the pseudo-element */
+    font: normal normal bold 62px/52px 'DIN Condensed';
+    color: #333333;
+    display: inline;
+    /* Makes the span inline for the line to fit snugly */
+}
+
+.contact-header span::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Centers the line horizontally */
+    bottom: 50%;
+    /* Adjusts the vertical position to match your design */
+    width: 120%;
+    /* The width of the line, can be more than 100% if it needs to extend beyond the text */
+    height: 9px;
+    /* The height of the line */
+    background-color: white;
+    /* The color of the line */
+    z-index: -1;
+    /* Puts the line behind the text */
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    /* Removes the default focus outline */
+    border: none;
+    border-bottom: 1px solid #767676;
+    /* Keeps the bottom border */
+    box-shadow: none;
+    /* Removes any shadow that might be applied */
+}
+
+.send-button-class {
+    min-width: 0px !important;
+}
