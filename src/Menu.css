@@ -1,0 +1,96 @@
+/* Styles for the Menu */
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100vw;
+    background-color: white;
+    height: auto;
+  }
+  
+  .menu-section {
+    /* background: #f8f9fa; */
+    border-right: 1px solid #ddd;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .menu-section-title {
+    font-size: 1.5rem;
+    color: #333;
+    text-transform: uppercase;
+    /* margin-bottom: 1rem; */
+    text-align: center;
+    position: relative;
+  }
+  
+  
+  
+  .menu-item {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .menu-item:last-child {
+    border-bottom: none;
+  }
+  
+  .menu-item-title {
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: 0.5rem;
+  }
+  
+  .menu-item-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  
+  .menu-item-price {
+    font-size: 1rem;
+    color: #e95420;
+    font-weight: bold;
+  }
+  .menu-section-title {
+    text-align: left;
+    font-family: 'DIN Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 62px;
+    line-height: 52px;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+  }
+  .menu-item-title{
+    text-align: left;
+    font-family: 'DIN Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 42px;
+    letter-spacing: 0.14px;
+    color: #333333;
+    opacity: 1;
+  }  
+  .menu-item-description {
+    text-align: left;
+    font-family: 'Gill Sans', sans-serif;
+    font-weight: normal; 
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+    color: #767676;
+    opacity: 1;
+  }
+  
+  .menu-item-price {
+    border: 2px solid #FFDAC9;
+    background-color: transparent; /* Example: makes the button's background transparent */
+    color: #333; /* Example: sets the button text color */
+     padding: 2px 4px;
+    font-size: 14px; /* Example: sets the font size */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    opacity: 1;
+    text-align: center; /* Centers the text inside the button */
+    width: 50px;
+  }
+  
