@@ -45,7 +45,7 @@ const starters = [
   };
 const Menu=()=> {
     return (<div className="container">
-        <MenuHeader title="OUR MENU"></MenuHeader>
+        {/* <MenuHeader title="OUR MENU"></MenuHeader> */}
         <MenuSection title="STARTERS" items={starters} />
         <MenuSection title="MAIN COURSES" items={mainCourses} />
         <MenuSection title="MAIN COURSES" items={mainCourses} />

@@ -14,10 +14,8 @@ function App() {
     <Header />
     <Hero></Hero>
     <Menu></Menu>
-    <CommunitySection/>
+    {/* <CommunitySection/> */}
     <MapSection/>
-    <Tummy></Tummy>
-    <Yummy></Yummy>
     <Contact/>
     <Footer />
     </>
