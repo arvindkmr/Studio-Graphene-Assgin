@@ -35,22 +35,13 @@ const starters = [
     );
   };
     
-  const MenuHeader = ({ title }) => {
-    return (
-      <div className="menu-header">
-        <h2 className="menu-header-title">{title}</h2>
-        <button className="menu-header-button">KNOW MORE</button>
-      </div>
-    );
-  };
 const Menu=()=> {
     return (<div className="container">
-        {/* <MenuHeader title="OUR MENU"></MenuHeader> */}
         <MenuSection title="STARTERS" items={starters} />
         <MenuSection title="MAIN COURSES" items={mainCourses} />
         <MenuSection title="MAIN COURSES" items={mainCourses} />
         <MenuSection title="MAIN COURSES" items={mainCourses} />
-        {/* ... other menu sections */}
+
     </div>
     )
 }
