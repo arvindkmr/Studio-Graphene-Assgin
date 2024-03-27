@@ -4,7 +4,7 @@ const MapSection = () => {
   return (
     <div className="map-section">
       <iframe
-        // title="Snazzy Map"
+        title="Map"
         src="https://snazzymaps.com/style/116734/sg-test-exercise"
         style={{ border:0 }}
         allowFullScreen="yes"

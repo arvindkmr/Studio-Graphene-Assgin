@@ -2,7 +2,6 @@ import React from 'react';
 import './CommunitySection.css';
 // Import your images here
 import postImage1 from './Assets/Hero.jpeg';
-import postImage2 from './Assets/Hero.jpeg';
 // Repeat for all images
 
 const CommunitySection = () => {
